@@ -1,0 +1,130 @@
+.top,
+.bottom {
+    /* overflow: scroll; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px;
+    left: 0;
+    right: 0;
+    
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    background-color: #B0BEC5;
+    height: 70%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFD54F;
+    height: 30%;
+}
+
+.split{
+    height: 250px;
+    position: absolute;
+    /* z-index : 1; */
+    margin: 10px;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.left{
+    width : 40%;
+    left : 0;
+    background-color:rgb(153, 153, 153);
+}
+.right{
+    width : 60%;
+    right : 0;
+    background-color:rgb(68, 68, 68);
+}
+.leftOne{
+    width : 70%;
+    left : 0;
+    background-color:transparent;
+}
+.rightOne{
+    width : 30%;
+    right : 0;
+    background-color:transparent;
+}
+.container{
+    
+    border: solid;
+    border-color:black;
+    padding: 2%;
+    width : 300px;
+}
+.container form{
+    display: table;
+}
+.container p{
+    width : 100%;
+    white-space: pre;
+    display: table-row;
+}
+.container input{
+    width: 100%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    display: table-cell;
+}
+.container label{
+    width: 40%;
+    display: table-cell;
+}
+.container button{
+    display: table-cell;
+    width : 40px;
+    height :40px;
+    float : right;
+    border-color: darkgreen;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    float:left;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.cellSpecial{
+    border: transparent;
+    background-color:rgb(68, 68, 68);
+
+}
+
+tr:nth-child(even) {
+background-color :rgb(156, 156, 156);
+}
+
+.submitButton{
+    background: #dddddd;
+    width : 100px;
+    height : 25px;
+    float : right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 114px;
+}
+/* .deleteButton{
+    background-image: url("./Images/minusSign.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left : 20px;
+    padding-right : 20px;
+} */
+
+h1{
+    margin-left: 30px;
+    text-align: center;
+}

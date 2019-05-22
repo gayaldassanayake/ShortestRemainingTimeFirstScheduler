@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel = "stylesheet" href="./design.css">
+        <link rel="import" href="os_sim.html">
+    </head>
+
+    <body>
+        <script src="./interfaceJS.js"> </script>
+        <script src="srtf.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.7.0/fabric.min.js"></script>
+        <!-- <script src="os_sim.html"></script> -->
+
+
+
+        <!-- <div class="tab top"> -->
+        <div class="top">
+            <h1>SHORTEST REMAINING TIME FIRST SCHEDULER</h1>
+            <div class ="split left">
+                <div class = "container">
+                    <form >
+                        <p>
+                            <label>Arrival Time:</label><input type = "text" id="arrivalTime">
+                        </p>
+                        <p>
+                            <label>Burst Time:</label><input type = "text" id="burstTime">
+                        </p>
+                        <p>
+                            <label>Process Color:</label><input type = "color" id="processColor" value="#ff0000">
+                        </p>
+                    </form>
+                    <button type= "submit" id = "addnew" onclick="addField()"><img src="./Images/PlusSign.png"  width = "20px" height = "20px" alt = "plus sign"/></button>
+                </div>
+            </div>
+            <div class = "split right">
+                <div>
+                <table id = "processTable">
+                    <tr>
+                        <th>    </th>
+                        <th>Process Name</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th class = "cellSpecial"></th>
+                    </tr>
+                </table>
+                </div>
+                <div>
+                    <button type = "submit" id = "submit" class = "submitButton" onclick="submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class= "tab middle"> -->
+        <div class = "bottom">
+            <div class  = "split leftOne">
+                <h2>Gant Chart</h2>
+                <canvas id="c" width="800" height="80" style="border:1px solid #BF360C;">
+                        Your browser does not support the HTML5 canvas tag.</canvas>
+                <script src = "simulation.js"></script> 
+            </div>
+            <div class = "split rightOne">
+                    <table >
+                        <tr>
+                            <p>Average Response Time  : <span id = "resTime"></span></p>                      
+                        </tr>
+                        <tr>
+                            <p>Average Turnaround Time: <span id = "turnTime"></span></p>                      
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    </body> 
+</html>
